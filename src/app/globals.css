@@ -62,4 +62,31 @@
   .text-balance {
     text-wrap: balance;
   }
+  /* Subtle noise using radial dots */
+  .bg-noise {
+    background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 6px 6px;
+    background-position: 0 0;
+    mix-blend-mode: overlay;
+  }
+
+  /* Waveform bars */
+  @keyframes wave {
+    0%, 100% { transform: scaleY(0.3); }
+    50% { transform: scaleY(1); }
+  }
+  .animate-wave {
+    transform-origin: bottom;
+    animation: wave 1.2s ease-in-out infinite;
+  }
+
+  /* Progress shimmer */
+  @keyframes progress {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+  }
+  .animate-progress {
+    transform: translateX(-100%);
+    animation: progress 2.4s ease-in-out infinite;
+  }
 }
