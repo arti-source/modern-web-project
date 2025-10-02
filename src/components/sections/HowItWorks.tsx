@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowDownRight, CheckCircle, FileText, Share2 } from 'lucide-react';
+import { CheckCircle, FileText, Share2 } from 'lucide-react';
 
 import GlassCard from '@/components/ui/glass-card';
 
@@ -54,4 +54,3 @@ export default function HowItWorks() {
     </section>
   );
 }
-
