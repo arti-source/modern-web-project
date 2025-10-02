@@ -1,8 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
 import { ArrowRight, CheckCircle2, FileText, Share2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -78,4 +76,3 @@ export default function Hero() {
     </section>
   );
 }
-
