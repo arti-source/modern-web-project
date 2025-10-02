@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight, CheckCircle, FileText, Share2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -34,7 +36,17 @@ export default function HomePage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-2xl font-bold">Notably</h1>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/notably-logo.png"
+              alt="Notably logo"
+              width={140}
+              height={36}
+              priority
+              className="h-9 w-auto dark:brightness-110"
+            />
+            <span className="sr-only">Notably</span>
+          </Link>
         </motion.div>
         <ThemeToggle />
       </header>
