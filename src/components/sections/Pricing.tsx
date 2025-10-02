@@ -39,6 +39,7 @@ export default function Pricing() {
           <GlassCard
             key={t.name}
             elevation={t.highlight ? 'lg' : 'md'}
+            interactive
             className={t.highlight ? 'relative p-6 ring-1 ring-primary/30' : 'p-6'}
           >
             {t.highlight && (
@@ -53,7 +54,7 @@ export default function Pricing() {
                 <li key={f}>• {f}</li>
               ))}
             </ul>
-            <Button className="mt-6 w-full">
+            <Button variant={t.highlight ? 'premium' : 'default'} className="mt-6 w-full">
               {t.cta}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -63,4 +64,3 @@ export default function Pricing() {
     </section>
   );
 }
-

@@ -42,7 +42,7 @@ export default function LiveDemo() {
 
       <div className="mx-auto mt-10 max-w-4xl">
         <div className="grid gap-6 md:grid-cols-2">
-          <GlassCard className="p-6">
+          <GlassCard interactive className="p-6">
             <div className="mb-3 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
                 <Mic className="h-4 w-4 text-primary" />
@@ -57,7 +57,7 @@ export default function LiveDemo() {
             </div>
           </GlassCard>
 
-          <GlassCard className="p-6">
+          <GlassCard interactive className="p-6">
             <div className="mb-3 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
                 <Sparkles className="h-4 w-4 text-primary" />
@@ -87,4 +87,3 @@ export default function LiveDemo() {
     </section>
   );
 }
-

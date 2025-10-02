@@ -13,7 +13,7 @@ export default function Integrations() {
       </div>
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {tools.map((t) => (
-          <GlassCard key={t} elevation="sm" className="flex items-center justify-center p-4 hover:shadow-xl">
+          <GlassCard key={t} elevation="sm" interactive className="flex items-center justify-center p-4">
             <span className="text-sm text-muted-foreground">{t}</span>
           </GlassCard>
         ))}
@@ -21,4 +21,3 @@ export default function Integrations() {
     </section>
   );
 }
-

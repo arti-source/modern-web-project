@@ -8,15 +8,15 @@ export default function Security() {
         </p>
       </div>
       <div className="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-3">
-        <div className="rounded-2xl border bg-white/5 p-6 backdrop-blur-xl dark:bg-white/5">
+        <div className="glass gradient-border p-6">
           <h3 className="font-semibold">Kryptering</h3>
           <p className="mt-2 text-sm text-muted-foreground">TLS i transitt, AES‑256 i ro.</p>
         </div>
-        <div className="rounded-2xl border bg-white/5 p-6 backdrop-blur-xl dark:bg-white/5">
+        <div className="glass gradient-border p-6">
           <h3 className="font-semibold">Tilgang</h3>
           <p className="mt-2 text-sm text-muted-foreground">RBAC, SSO/SAML på Business.</p>
         </div>
-        <div className="rounded-2xl border bg-white/5 p-6 backdrop-blur-xl dark:bg-white/5">
+        <div className="glass gradient-border p-6">
           <h3 className="font-semibold">Dataområde</h3>
           <p className="mt-2 text-sm text-muted-foreground">EU‑lagring tilgjengelig. DPA på forespørsel.</p>
         </div>
@@ -24,4 +24,3 @@ export default function Security() {
     </section>
   );
 }
-

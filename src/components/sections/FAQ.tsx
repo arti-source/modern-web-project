@@ -22,7 +22,7 @@ export default function FAQ() {
       </div>
       <div className="mx-auto mt-8 max-w-3xl space-y-4">
         {faqs.map((f) => (
-          <details key={f.q} className="group rounded-2xl border bg-white/5 p-4 backdrop-blur-xl">
+          <details key={f.q} className="group glass gradient-border p-4">
             <summary className="cursor-pointer list-none font-medium">
               {f.q}
             </summary>
@@ -33,4 +33,3 @@ export default function FAQ() {
     </section>
   );
 }
-

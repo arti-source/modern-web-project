@@ -41,7 +41,7 @@ export default function HowItWorks() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.45, delay: 0.05 * i }}
           >
-            <GlassCard className="h-full p-6">
+            <GlassCard interactive className="h-full p-6">
               <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                 <s.icon className="h-6 w-6 text-primary" />
               </div>

@@ -25,7 +25,7 @@ export default function Testimonials() {
       </div>
       <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
         {testimonials.map((t) => (
-          <GlassCard key={t.author} elevation="sm" className="p-6">
+          <GlassCard key={t.author} elevation="sm" interactive className="p-6">
             <p className="text-sm leading-relaxed text-muted-foreground">“{t.quote}”</p>
             <p className="mt-4 text-xs font-semibold">{t.author}</p>
           </GlassCard>
@@ -34,4 +34,3 @@ export default function Testimonials() {
     </section>
   );
 }
-

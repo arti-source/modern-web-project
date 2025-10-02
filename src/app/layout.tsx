@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 
 import './globals.css';
+import AuroraBackground from '@/components/ui/aurora-background';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -61,6 +62,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
         >
+          <AuroraBackground />
           {children}
         </ThemeProvider>
       </body>
