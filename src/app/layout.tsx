@@ -11,25 +11,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Modern Web Project',
-  description: 'A modern web application built with Next.js 14 and TypeScript',
-  keywords: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
+  title: 'Notably – AI møtereferater',
+  description:
+    'Notably er en app for å lage møtereferater med kunstig intelligens – fra transkribering til sammendrag, beslutninger og oppgaver.',
+  keywords: ['Notably', 'AI', 'møtereferater', 'transkribering', 'møter'],
+  authors: [{ name: 'Notably' }],
+  creator: 'Notably',
   metadataBase: new URL('https://your-domain.com'),
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'nb_NO',
     url: 'https://your-domain.com',
-    title: 'Modern Web Project',
-    description: 'A modern web application built with Next.js 14 and TypeScript',
-    siteName: 'Modern Web Project',
+    title: 'Notably – AI møtereferater',
+    description:
+      'Notably hjelper teamet ditt å fange opp alt som blir sagt i møter – del klare referater på sekunder.',
+    siteName: 'Notably',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modern Web Project',
-    description: 'A modern web application built with Next.js 14 and TypeScript',
-    creator: '@yourusername',
+    title: 'Notably – AI møtereferater',
+    description:
+      'Fang opp alt i møter med AI: transkribering, sammendrag, beslutninger og oppgaver.',
+    creator: '@notably',
   },
   robots: {
     index: true,

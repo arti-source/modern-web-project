@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle, FileText, Share2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,19 +9,19 @@ import { ThemeToggle } from '@/components/theme-toggle';
 
 const features = [
   {
-    icon: Zap,
-    title: 'Lynrask ytelse',
-    description: 'Bygget med Next.js 14 og moderne optimalisering for maksimal hastighet.',
+    icon: FileText,
+    title: 'Automatiske referater',
+    description: 'Transkriber møter og generer klare, delbare møtereferater på sekunder.',
   },
   {
-    icon: Sparkles,
-    title: 'Moderne design',
-    description: 'Responsivt design med Tailwind CSS og shadcn/ui komponenter.',
+    icon: CheckCircle,
+    title: 'Sammendrag og oppgaver',
+    description: 'AI trekker ut beslutninger, action items og neste steg automatisk.',
   },
   {
-    icon: Github,
-    title: 'Beste praksis',
-    description: 'TypeScript, ESLint, Prettier og automatiserte tester inkludert.',
+    icon: Share2,
+    title: 'Integrasjoner og deling',
+    description: 'Fungerer med favorittverktøyene dine og gjør deling enkelt.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomePage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-2xl font-bold">ModernWeb</h1>
+          <h1 className="text-2xl font-bold">Notably</h1>
         </motion.div>
         <ThemeToggle />
       </header>
@@ -47,23 +47,23 @@ export default function HomePage() {
           className="text-center"
         >
           <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl">
-            Moderne webutvikling
+            AI‑drevne møtereferater
             <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              {' '}
-              for 2025
+              {' '}for teamet ditt
             </span>
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground">
-            Et toppmoderne Next.js prosjekt med TypeScript, Tailwind CSS og beste praksis
-            for moderne webutvikling. Klar for produksjon og optimalisert for ytelse.
+            Notably hjelper deg å fange opp alt som blir sagt i møter –
+            fra transkribering til sammendrag, beslutninger og oppgaver.
+            Del referater på sekunder og hold alle på samme side.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button size="lg" className="group">
-              Kom i gang
+              Prøv Notably gratis
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button size="lg" variant="outline">
-              Se dokumentasjon
+              Se hvordan det fungerer
             </Button>
           </div>
         </motion.section>
@@ -106,12 +106,13 @@ export default function HomePage() {
           className="mt-24 text-center"
         >
           <div className="rounded-lg bg-muted/50 p-8">
-            <h2 className="mb-4 text-2xl font-bold">Klar til å starte?</h2>
+            <h2 className="mb-4 text-2xl font-bold">Klar til å komme i gang?</h2>
             <p className="mb-6 text-muted-foreground">
-              Dette prosjektet er satt opp med alle moderne verktøy og beste praksis.
+              Test Notably i dag og opplev hvor mye raskere og tydeligere
+              møtene dine kan bli med AI.
             </p>
             <Button size="lg">
-              Start utviklingen
+              Opprett gratis konto
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
@@ -120,7 +121,7 @@ export default function HomePage() {
 
       <footer className="mt-24 border-t py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>Bygget med ❤️ og moderne teknologi</p>
+          <p>Notably © {new Date().getFullYear()}</p>
         </div>
       </footer>
     </div>
