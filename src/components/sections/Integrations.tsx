@@ -1,6 +1,7 @@
 "use client";
 
 import GlassCard from '@/components/ui/glass-card';
+import TiltCard from '@/components/ui/tilt-card';
 
 const tools = ['Google Meet', 'Zoom', 'Microsoft Teams', 'Slack', 'Notion', 'Asana', 'Jira', 'HubSpot'];
 
@@ -13,9 +14,11 @@ export default function Integrations() {
       </div>
       <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {tools.map((t) => (
-          <GlassCard key={t} elevation="sm" interactive className="flex items-center justify-center p-4">
-            <span className="text-sm text-muted-foreground">{t}</span>
-          </GlassCard>
+          <TiltCard key={t} className="rounded-2xl">
+            <GlassCard elevation="sm" interactive className="flex items-center justify-center p-4">
+              <span className="text-sm text-muted-foreground">{t}</span>
+            </GlassCard>
+          </TiltCard>
         ))}
       </div>
     </section>

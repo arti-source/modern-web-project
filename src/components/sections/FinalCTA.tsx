@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import MagneticButton from '@/components/ui/magnetic-button';
 
 export default function FinalCTA() {
   return (
@@ -12,13 +13,13 @@ export default function FinalCTA() {
           Start gratis, eller book en demo for teamet ditt.
         </p>
         <div className="relative z-10 mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-          <Button size="lg" variant="premium">
+          <MagneticButton size="lg" variant="premium">
             Opprett gratis konto
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button size="lg" variant="outline">
+          </MagneticButton>
+          <MagneticButton size="lg" variant="outline">
             Book en demo
-          </Button>
+          </MagneticButton>
         </div>
       </div>
     </section>

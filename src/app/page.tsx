@@ -14,10 +14,15 @@ import Testimonials from '@/components/sections/Testimonials';
 import Pricing from '@/components/sections/Pricing';
 import FAQ from '@/components/sections/FAQ';
 import FinalCTA from '@/components/sections/FinalCTA';
+import Journey from '@/components/sections/Journey';
+import ScrollProgress from '@/components/ui/scroll-progress';
+import InteractiveSpotlight from '@/components/ui/interactive-spotlight';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <ScrollProgress />
+      <InteractiveSpotlight />
       <header className="sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <div className="glass gradient-border w-full rounded-xl border border-white/10 px-4 py-3">
@@ -47,6 +52,7 @@ export default function HomePage() {
 
       <main>
         <Hero />
+        <Journey />
         <HowItWorks />
         <LiveDemo />
         <Integrations />

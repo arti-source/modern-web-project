@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, CheckCircle2, FileText, Share2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import MagneticButton from '@/components/ui/magnetic-button';
 import GlassCard from '@/components/ui/glass-card';
 
 function Waveform() {
@@ -54,13 +55,13 @@ export default function Hero() {
           Fang alt som blir sagt – transkribering, sammendrag, beslutninger og oppgaver. Del klare referater på sekunder.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <Button size="lg" variant="premium" className="group">
+          <MagneticButton size="lg" variant="premium" className="group">
             Prøv Notably gratis
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-          <Button size="lg" variant="outline">
+          </MagneticButton>
+          <MagneticButton size="lg" variant="outline">
             Se demo
-          </Button>
+          </MagneticButton>
         </div>
 
         <Waveform />

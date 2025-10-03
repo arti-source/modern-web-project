@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/glass-card';
+import TiltCard from '@/components/ui/tilt-card';
 
 const tiers = [
   {
@@ -36,29 +37,30 @@ export default function Pricing() {
       </div>
       <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
         {tiers.map((t) => (
-          <GlassCard
-            key={t.name}
-            elevation={t.highlight ? 'lg' : 'md'}
-            interactive
-            className={t.highlight ? 'relative p-6 ring-1 ring-primary/30' : 'p-6'}
-          >
-            {t.highlight && (
-              <div className="absolute -top-2 right-4 rounded-full bg-primary/20 px-3 py-1 text-xs text-primary">
-                Mest valgt
-              </div>
-            )}
-            <h3 className="text-xl font-semibold">{t.name}</h3>
-            <p className="mt-2 text-3xl font-bold">{t.price}</p>
-            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-              {t.features.map((f) => (
-                <li key={f}>• {f}</li>
-              ))}
-            </ul>
-            <Button variant={t.highlight ? 'premium' : 'default'} className="mt-6 w-full">
-              {t.cta}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </GlassCard>
+          <TiltCard key={t.name} className="rounded-2xl">
+            <GlassCard
+              elevation={t.highlight ? 'lg' : 'md'}
+              interactive
+              className={t.highlight ? 'relative p-6 ring-1 ring-primary/30' : 'p-6'}
+            >
+              {t.highlight && (
+                <div className="absolute -top-2 right-4 rounded-full bg-primary/20 px-3 py-1 text-xs text-primary">
+                  Mest valgt
+                </div>
+              )}
+              <h3 className="text-xl font-semibold">{t.name}</h3>
+              <p className="mt-2 text-3xl font-bold">{t.price}</p>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                {t.features.map((f) => (
+                  <li key={f}>• {f}</li>
+                ))}
+              </ul>
+              <Button variant={t.highlight ? 'premium' : 'default'} className="mt-6 w-full">
+                {t.cta}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </GlassCard>
+          </TiltCard>
         ))}
       </div>
     </section>
