@@ -3,9 +3,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, CheckCircle2, FileText, Share2 } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
-import MagneticButton from '@/components/ui/magnetic-button';
 import GlassCard from '@/components/ui/glass-card';
+import MagneticButton from '@/components/ui/magnetic-button';
 
 function Waveform() {
   return (

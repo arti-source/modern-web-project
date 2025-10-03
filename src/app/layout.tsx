@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import { ThemeProvider } from '@/components/theme-provider';
+import AuroraBackground from '@/components/ui/aurora-background';
 
 import './globals.css';
-import AuroraBackground from '@/components/ui/aurora-background';
 
 const inter = Inter({
   subsets: ['latin'],

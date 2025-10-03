@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from 'react';
 import { motion, useScroll } from 'framer-motion';
 
 export default function ScrollProgress() {
@@ -21,4 +20,3 @@ export default function ScrollProgress() {
     </motion.div>
   );
 }
-

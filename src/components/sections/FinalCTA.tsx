@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
 import MagneticButton from '@/components/ui/magnetic-button';
 
 export default function FinalCTA() {

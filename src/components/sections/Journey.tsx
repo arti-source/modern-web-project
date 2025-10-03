@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { CheckCircle, FileText, Share2 } from 'lucide-react';
+import * as React from 'react';
 
 import GlassCard from '@/components/ui/glass-card';
 import TiltCard from '@/components/ui/tilt-card';

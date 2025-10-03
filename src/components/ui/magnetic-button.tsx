@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from 'react';
+
 import { Button, type ButtonProps } from '@/components/ui/button';
 
 export type MagneticButtonProps = ButtonProps & {
@@ -59,4 +60,3 @@ export default function MagneticButton({
     </div>
   );
 }
-

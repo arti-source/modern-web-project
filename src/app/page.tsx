@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ThemeToggle } from '@/components/theme-toggle';
-import Hero from '@/components/sections/Hero';
-import HowItWorks from '@/components/sections/HowItWorks';
-import LiveDemo from '@/components/sections/LiveDemo';
-import Integrations from '@/components/sections/Integrations';
-import Security from '@/components/sections/Security';
-import Testimonials from '@/components/sections/Testimonials';
-import Pricing from '@/components/sections/Pricing';
 import FAQ from '@/components/sections/FAQ';
 import FinalCTA from '@/components/sections/FinalCTA';
+import Hero from '@/components/sections/Hero';
+import HowItWorks from '@/components/sections/HowItWorks';
+import Integrations from '@/components/sections/Integrations';
 import Journey from '@/components/sections/Journey';
-import ScrollProgress from '@/components/ui/scroll-progress';
+import LiveDemo from '@/components/sections/LiveDemo';
+import Pricing from '@/components/sections/Pricing';
+import Security from '@/components/sections/Security';
+import Testimonials from '@/components/sections/Testimonials';
+import { ThemeToggle } from '@/components/theme-toggle';
 import InteractiveSpotlight from '@/components/ui/interactive-spotlight';
+import ScrollProgress from '@/components/ui/scroll-progress';
 
 export default function HomePage() {
   return (

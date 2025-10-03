@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Mic, Sparkles } from 'lucide-react';
+import * as React from 'react';
 
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/glass-card';
